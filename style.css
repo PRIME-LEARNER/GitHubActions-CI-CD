@@ -1,9 +1,9 @@
 :root{
-  --bg: #0f172a;
-  --card: #0b1220;
-  --accent: #38bdf8;
+  --bg: #020617;
+  --card: #0f172a;
+  --accent: #22d3ee;
   --muted: #94a3b8;
-  --text: #e6eef8;
+  --text: #e2e8f0;
   --radius: 12px;
   font-family: 'Segoe UI', Roboto, sans-serif;
 }
@@ -11,15 +11,17 @@
 *{box-sizing:border-box}
 body{
   margin:0;
-  background: linear-gradient(180deg,var(--bg), #071028);
+  background: linear-gradient(180deg,var(--bg), #0b1120);
   color:var(--text);
   padding:24px;
   -webkit-font-smoothing:antialiased;
+  transition: background 0.6s ease;
 }
 
 .site-header{
   text-align:center;
   margin-bottom:20px;
+  animation: fadeIn 1s ease-in-out;
 }
 .site-header h1{
   margin:0;
@@ -38,9 +40,11 @@ body{
   padding:20px;
   border-radius:var(--radius);
   box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+  animation: slideIn 0.8s ease-in-out;
 }
 
 .hero h2{ margin-top:0 }
+
 button{
   background:transparent;
   border:2px solid var(--accent);
@@ -49,17 +53,42 @@ button{
   border-radius:8px;
   cursor:pointer;
   font-weight:600;
+  transition: all 0.3s ease;
 }
-button:hover{ background: rgba(56,189,248,0.06) }
+button:hover{
+  background: var(--accent);
+  color:var(--bg);
+  transform: scale(1.05);
+}
 
 .hidden{ display:none }
 
 .features{ margin-top:18px }
 .features ul{ color:var(--muted) }
 
+.about{
+  margin-top:20px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:15px;
+}
+
 .site-footer{
   max-width:900px;
   margin:18px auto 0;
   text-align:center;
   color:var(--muted);
+  font-size:0.9rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

@@ -1,0 +1,65 @@
+:root{
+  --bg: #0f172a;
+  --card: #0b1220;
+  --accent: #38bdf8;
+  --muted: #94a3b8;
+  --text: #e6eef8;
+  --radius: 12px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background: linear-gradient(180deg,var(--bg), #071028);
+  color:var(--text);
+  padding:24px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.site-header{
+  text-align:center;
+  margin-bottom:20px;
+}
+.site-header h1{
+  margin:0;
+  font-size:2rem;
+  letter-spacing:0.4px;
+}
+.tagline{
+  color:var(--muted);
+  margin-top:6px;
+}
+
+.content{
+  max-width:900px;
+  margin:0 auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+}
+
+.hero h2{ margin-top:0 }
+button{
+  background:transparent;
+  border:2px solid var(--accent);
+  color:var(--accent);
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover{ background: rgba(56,189,248,0.06) }
+
+.hidden{ display:none }
+
+.features{ margin-top:18px }
+.features ul{ color:var(--muted) }
+
+.site-footer{
+  max-width:900px;
+  margin:18px auto 0;
+  text-align:center;
+  color:var(--muted);
+}

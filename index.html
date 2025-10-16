@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My DevOps Practice Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>My DevOps Practice Site</h1>
+    <p class="tagline">Git + GitHub Actions practice ke liye simple static site</p>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h2>Welcome 👋</h2>
+      <p>
+        Yeh simple website har push pe update hogi — pehle local pe practice karo,
+        phir git push karke CI/CD flow dekhna.
+      </p>
+      <button id="surpriseBtn">Click for a surprise</button>
+      <div id="surprise" class="hidden"></div>
+    </section>
+
+    <section class="features">
+      <h3>Practice Ideas</h3>
+      <ul>
+        <li>Add a new section and push</li>
+        <li>Change styles and push</li>
+        <li>Add a new JS effect and push</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Built for DevOps practice • <span id="year"></span></small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -16,8 +16,8 @@
     <section class="hero">
       <h2>Welcome 👋</h2>
       <p>
-        Yeh simple website har push pe update hogi — pehle local pe practice karo,
-        phir git push karke CI/CD flow dekhna.
+        Yeh simple website har push pe update hoti hai — har bar jab tum change
+        kar ke <strong>git push</strong> karte ho, GitHub Actions isay deploy kar deta hai.
       </p>
       <button id="surpriseBtn">Click for a surprise</button>
       <div id="surprise" class="hidden"></div>
@@ -31,12 +31,31 @@
         <li>Add a new JS effect and push</li>
       </ul>
     </section>
+
+    <!-- 👇 NEW SECTION START -->
+    <section class="about">
+      <h3>About This Project 🧠</h3>
+      <p>
+        Yeh project DevOps learning ke liye bana hai — jisme hum Git version control,
+        GitHub Actions, aur CI/CD pipelines ka practical use samajhte hain.
+        Har naye commit ke saath, yeh site automatically redeploy hoti hai 🚀.
+      </p>
+      <p>
+        Try changing this text again next time — phir dekho live site par
+        turant difference aata hai ya nahi 😎
+      </p>
+    </section>
+    <!-- 👆 NEW SECTION END -->
   </main>
 
   <footer class="site-footer">
-    <small>Built for DevOps practice • <span id="year"></span></small>
+    <small>
+      Built for DevOps practice • <span id="year"></span> •
+      <strong>Version 2 — updated successfully ✅</strong>
+    </small>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

@@ -9,49 +9,66 @@
 <body>
   <header class="site-header">
     <h1>My DevOps Practice Site</h1>
-    <p class="tagline">Git + GitHub Actions practice ke liye simple static site</p>
+    <p class="tagline">CI/CD & GitHub Actions ke sath real deployment practice</p>
     <button id="themeToggle" class="theme-btn">🌗 Toggle Theme</button>
   </header>
 
+  <nav class="navbar">
+    <a href="#hero">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main class="content">
-    <section class="hero">
+    <section id="hero" class="hero">
       <h2>Welcome 👋</h2>
       <p>
-        Yeh simple website har push pe update hoti hai — har bar jab tum change
-        kar ke <strong>git push</strong> karte ho, GitHub Actions isay deploy kar deta hai.
+        Ye site CI/CD testing ke liye banaai gayi hai. Har update ke sath tum
+        <strong>git push</strong> karte ho, aur GitHub Actions automatically deploy karta hai 🚀
       </p>
       <button id="surpriseBtn">Click for a surprise</button>
       <div id="surprise" class="hidden"></div>
     </section>
 
-    <section class="features">
-      <h3>Practice Ideas</h3>
+    <section id="features" class="features">
+      <h3>Practice Ideas 💡</h3>
       <ul>
-        <li>Add a new section and push</li>
-        <li>Change styles and push</li>
-        <li>Add a new JS effect and push</li>
-        <li>Switch between light & dark mode</li>
+        <li>Add new features and push</li>
+        <li>Change CSS animations</li>
+        <li>Add JavaScript logic</li>
+        <li>Deploy automatically using CI/CD</li>
       </ul>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h3>About This Project 🧠</h3>
       <p>
-        Yeh project DevOps learning ke liye bana hai — jisme hum Git version control,
-        GitHub Actions, aur CI/CD pipelines ka practical use samajhte hain.
-        Har naye commit ke saath, yeh site automatically redeploy hoti hai 🚀.
+        Ye project DevOps learning ke liye hai — jahan hum Git, GitHub, CI/CD, aur
+        deployment process practically test kar rahe hain.
       </p>
       <p>
-        Ab humne Light/Dark mode bhi add kar liya hai — ab push karo aur dekho
-        site par live change aata hai ya nahi 😎
+        Ab humne Contact Form aur Smooth Scroll bhi add kar diya hai.
+        Try karo aur dekho automation ka magic live!
       </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact Us 📬</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formResponse" class="hidden"></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <small>
-      Built for DevOps practice • <span id="year"></span> •
-      <strong>Version 3 — Light/Dark Mode Enabled 🌗</strong>
+      Built for DevOps Practice • <span id="year"></span> •
+      <strong>Version 4 — Contact Form + Smooth Scroll</strong>
     </small>
   </footer>
 

@@ -24,7 +24,6 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  padding: 0;
   transition: all 0.4s ease;
 }
 
@@ -79,20 +78,44 @@ section.visible {
   transform: translateY(0);
 }
 
-button, .theme-btn {
+/* PROJECTS GALLERY */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 15px;
+  border: 1px solid var(--accent);
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
   background: var(--accent);
   border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
   color: var(--bg);
-  padding: 8px 14px;
-  border-radius: 8px;
+  font-size: 22px;
   cursor: pointer;
-  font-weight: 600;
-  transition: transform 0.2s, background 0.3s;
+  display: none;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
-button:hover {
-  transform: scale(1.05);
-  background: var(--text);
-  color: var(--bg);
+.back-to-top:hover {
+  transform: scale(1.1);
 }
 
 form {
